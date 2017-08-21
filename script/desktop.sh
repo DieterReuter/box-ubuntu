@@ -60,3 +60,6 @@ NODPMS_CONFIG=/etc/xdg/autostart/nodpms.desktop
     echo "Comment=" >> $NODPMS_CONFIG
 fi
 
+if [[ $DISTRIB_RELEASE == 16.04 ]]; then
+  sudo update-locale LANG=en_US.UTF-8 LANGUAGE=en_US
+fi
